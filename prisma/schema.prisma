@@ -1,0 +1,71 @@
+// Prisma schema for Vinay's World Personal Digital Library
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model Book {
+  id              String   @id @default(uuid())
+  title           String
+  author          String?
+  filePath        String
+  fileType        String
+  fileSizeBytes   Int?
+  category        String?
+  subcategory     String?
+  topics          String? // Stored as comma-separated or JSON
+  level           String?
+  contentType     String?
+  shortDescription String?
+  whatYouWillLearn String? // Stored as JSON array or text
+  intendedAudience String?
+  relevanceAreas  String? // Stored as comma-separated or JSON
+  difficulty      String?
+  description     String?
+  tags            String?
+  publisher       String?
+  publicationYear Int?
+  language        String  @default("English")
+  metadataSource  String  @default("AUTOMATIC") // AUTOMATIC, MANUAL, VERIFIED
+  classificationConfidence String @default("UNKNOWN") // HIGH, MEDIUM, LOW, UNKNOWN
+  chapterCount    Int?
+  pageCount       Int?
+  importStatus    String   @default("PENDING") // PENDING, PROCESSING, READY, FAILED, UNSUPPORTED
+  failReason      String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  
+  progress        BookProgress[]
+  bookmarks       BookBookmark[]
+}
+
+model BookProgress {
+  id              String   @id @default(uuid())
+  bookId          String
+  book            Book     @relation(fields: [bookId], references: [id])
+  userId          String   @default("user_1")
+  currentLocation String?
+  percentage      Float    @default(0)
+  isCompleted     Boolean  @default(false)
+  lastOpenedAt    DateTime @default(now())
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+  
+  @@unique([bookId, userId])
+}
+
+model BookBookmark {
+  id              String   @id @default(uuid())
+  bookId          String
+  book            Book     @relation(fields: [bookId], references: [id])
+  userId          String   @default("user_1")
+  location        String
+  selectedText    String?
+  note            String?
+  createdAt       DateTime @default(now())
+}

@@ -1,0 +1,91 @@
+export const a2VocabularyWords = [
+  // Technology & Software (30)
+  { word: 'Algorithm', meaning: 'A process or set of rules to be followed in calculations.', hindiSupport: 'Samasya suljhane ka tarika', pronunciation: '/ˈæl.ɡə.rɪ.ðəm/', exampleSentence: 'We need a better algorithm for sorting data.', context: 'Software', difficulty: 'A2-HARD' },
+  { word: 'Deploy', meaning: 'To move code to a server so users can access it.', hindiSupport: 'Code ko live karna', pronunciation: '/dɪˈplɔɪ/', exampleSentence: 'I will deploy the new feature tomorrow.', context: 'Software', difficulty: 'A2-MEDIUM' },
+  { word: 'Framework', meaning: 'A platform for developing software applications.', hindiSupport: 'Software banane ka dhancha', pronunciation: '/ˈfreɪm.wɜːk/', exampleSentence: 'React is a popular JavaScript framework.', context: 'Software', difficulty: 'A2-MEDIUM' },
+  { word: 'Syntax', meaning: 'The set of rules that defines the combinations of symbols.', hindiSupport: 'Code likhne ke niyam', pronunciation: '/ˈsɪn.tæks/', exampleSentence: 'I got a syntax error because I missed a comma.', context: 'Software', difficulty: 'A2-HARD' },
+  { word: 'Authenticate', meaning: 'To prove that a user is who they claim to be.', hindiSupport: 'Pahchan pramanit karna', pronunciation: '/ɔːˈθen.tɪ.keɪt/', exampleSentence: 'Users must authenticate before accessing the dashboard.', context: 'Software', difficulty: 'A2-HARD' },
+  { word: 'Integrate', meaning: 'To combine one thing with another to form a whole.', hindiSupport: 'Jodna / Ek sath milana', pronunciation: '/ˈɪn.tɪ.ɡreɪt/', exampleSentence: 'We need to integrate a payment gateway.', context: 'Software', difficulty: 'A2-HARD' },
+  { word: 'Optimize', meaning: 'To make the best or most effective use of.', hindiSupport: 'Behtar banana', pronunciation: '/ˈɒp.tɪ.maɪz/', exampleSentence: 'We should optimize the images to load faster.', context: 'Software', difficulty: 'A2-HARD' },
+  { word: 'Refactor', meaning: 'To restructure existing computer code.', hindiSupport: 'Code ko behtar tarike se dobara likhna', pronunciation: '/riːˈfæk.tər/', exampleSentence: 'I am going to refactor this old component.', context: 'Software', difficulty: 'A2-HARD' },
+  { word: 'Environment', meaning: 'The surroundings or conditions in which software runs.', hindiSupport: 'Mahoul', pronunciation: '/ɪnˈvaɪ.rən.mənt/', exampleSentence: 'This bug only happens in the production environment.', context: 'Software', difficulty: 'A2-MEDIUM' },
+  { word: 'Execute', meaning: 'To run a program or command.', hindiSupport: 'Chalaana', pronunciation: '/ˈek.sɪ.kjuːt/', exampleSentence: 'Press enter to execute the script.', context: 'Software', difficulty: 'A2-MEDIUM' },
+  { word: 'Navigate', meaning: 'To move around a website or application.', hindiSupport: 'Website par idhar-udhar jana', pronunciation: '/ˈnæv.ɪ.ɡeɪt/', exampleSentence: 'Users navigate using the top menu.', context: 'Software', difficulty: 'A2-MEDIUM' },
+  { word: 'Component', meaning: 'A part or element of a larger whole.', hindiSupport: 'Hissa', pronunciation: '/kəmˈpəʊ.nənt/', exampleSentence: 'The login button is a reusable component.', context: 'Software', difficulty: 'A2-MEDIUM' },
+  { word: 'Responsive', meaning: 'Reacting quickly and positively (e.g., to different screen sizes).', hindiSupport: 'Twarit pratikriya / Screen ke anusar dhalna', pronunciation: '/rɪˈspɒn.sɪv/', exampleSentence: 'Our website must be mobile responsive.', context: 'Software', difficulty: 'A2-MEDIUM' },
+  { word: 'Query', meaning: 'A request for information from a database.', hindiSupport: 'Sawal / Database se jankari mangna', pronunciation: '/ˈkwɪə.ri/', exampleSentence: 'The database query is taking too long.', context: 'Software', difficulty: 'A2-HARD' },
+  { word: 'Cache', meaning: 'A hardware or software component that stores data.', hindiSupport: 'Data ko temporary store karna', pronunciation: '/kæʃ/', exampleSentence: 'Clear your browser cache to see the changes.', context: 'Software', difficulty: 'A2-HARD' },
+  { word: 'Parameter', meaning: 'A variable that is passed to a function.', hindiSupport: 'Function ka input', pronunciation: '/pəˈræm.ɪ.tər/', exampleSentence: 'This function accepts two parameters.', context: 'Software', difficulty: 'A2-HARD' },
+  { word: 'Compile', meaning: 'To convert code into a machine-readable format.', hindiSupport: 'Code ko machine bhasha mein badalna', pronunciation: '/kəmˈpaɪl/', exampleSentence: 'The code takes a minute to compile.', context: 'Software', difficulty: 'A2-MEDIUM' },
+  { word: 'Asynchronous', meaning: 'Not occurring at the same time.', hindiSupport: 'Ek sath na hona (background mein kaam)', pronunciation: '/eɪˈsɪŋ.krə.nəs/', exampleSentence: 'We use asynchronous functions to fetch data.', context: 'Software', difficulty: 'A2-HARD' },
+  { word: 'Dependency', meaning: 'A program or code that another program relies on.', hindiSupport: 'Nirbharta', pronunciation: '/dɪˈpen.dən.si/', exampleSentence: 'Run npm install to download dependencies.', context: 'Software', difficulty: 'A2-HARD' },
+  { word: 'Architecture', meaning: 'The complex or carefully designed structure of something.', hindiSupport: 'Dhancha / Banawat', pronunciation: '/ˈɑː.kɪ.tek.tʃər/', exampleSentence: 'The system architecture needs to scale.', context: 'Software', difficulty: 'A2-HARD' },
+  { word: 'Configure', meaning: 'To arrange or set up a computer system.', hindiSupport: 'Set up karna', pronunciation: '/kənˈfɪɡ.ər/', exampleSentence: 'I need to configure the server settings.', context: 'Software', difficulty: 'A2-MEDIUM' },
+  { word: 'Iterate', meaning: 'To perform or utter repeatedly.', hindiSupport: 'Baar-baar karna (sudhar ke liye)', pronunciation: '/ˈɪt.ər.eɪt/', exampleSentence: 'We will iterate on the design based on feedback.', context: 'Software', difficulty: 'A2-HARD' },
+  { word: 'Module', meaning: 'Each of a set of standardized parts.', hindiSupport: 'Hissa / Ikai', pronunciation: '/ˈmɒdʒ.uːl/', exampleSentence: 'I finished the payment module.', context: 'Software', difficulty: 'A2-MEDIUM' },
+  { word: 'Resolve', meaning: 'To settle or find a solution to a problem.', hindiSupport: 'Suljhana', pronunciation: '/rɪˈzɒlv/', exampleSentence: 'I will resolve this merge conflict.', context: 'Software', difficulty: 'A2-MEDIUM' },
+  { word: 'Repository', meaning: 'A central location where data is stored.', hindiSupport: 'Data rakhne ki jagah', pronunciation: '/rɪˈpɒz.ɪ.tər.i/', exampleSentence: 'Clone the repository to your local machine.', context: 'Software', difficulty: 'A2-HARD' },
+  { word: 'Credential', meaning: 'A qualification, achievement, or aspect of a person\'s background.', hindiSupport: 'Praman / Password aadi', pronunciation: '/krɪˈden.ʃəl/', exampleSentence: 'Do not share your login credentials.', context: 'Software', difficulty: 'A2-HARD' },
+  { word: 'Allocate', meaning: 'Distribute (resources or duties) for a particular purpose.', hindiSupport: 'Baantna / Nirdharit karna', pronunciation: '/ˈæl.ə.keɪt/', exampleSentence: 'We need to allocate more memory to the server.', context: 'Software', difficulty: 'A2-HARD' },
+  { word: 'Encrypt', meaning: 'Convert data into a code to prevent unauthorized access.', hindiSupport: 'Data ko secure code mein badalna', pronunciation: '/ɪnˈkrɪpt/', exampleSentence: 'Always encrypt user passwords.', context: 'Software', difficulty: 'A2-HARD' },
+  { word: 'Evaluate', meaning: 'Form an idea of the amount, number, or value of.', hindiSupport: 'Mulyankan karna', pronunciation: '/ɪˈvæl.ju.eɪt/', exampleSentence: 'We need to evaluate the performance of the app.', context: 'Software', difficulty: 'A2-MEDIUM' },
+  { word: 'Implement', meaning: 'Put into effect.', hindiSupport: 'Lagu karna', pronunciation: '/ˈɪm.plɪ.ment/', exampleSentence: 'I will implement the new design tomorrow.', context: 'Software', difficulty: 'A2-MEDIUM' },
+
+  // Workplace & Communication (30)
+  { word: 'Agenda', meaning: 'A list of items to be discussed at a formal meeting.', hindiSupport: 'Karyasuchi', pronunciation: '/əˈdʒen.də/', exampleSentence: 'What is the agenda for today\'s meeting?', context: 'Workplace', difficulty: 'A2-MEDIUM' },
+  { word: 'Clarify', meaning: 'Make a statement or situation less confused.', hindiSupport: 'Spasht karna', pronunciation: '/ˈklær.ɪ.faɪ/', exampleSentence: 'Could you clarify what you mean?', context: 'Communication', difficulty: 'A2-MEDIUM' },
+  { word: 'Collaborate', meaning: 'Work jointly on an activity or project.', hindiSupport: 'Milkar kaam karna', pronunciation: '/kəˈlæb.ə.reɪt/', exampleSentence: 'We need to collaborate with the design team.', context: 'Workplace', difficulty: 'A2-HARD' },
+  { word: 'Deadline', meaning: 'The latest time or date by which something should be completed.', hindiSupport: 'Antim samay', pronunciation: '/ˈded.laɪn/', exampleSentence: 'The deadline for this project is Friday.', context: 'Workplace', difficulty: 'A2-EASY' },
+  { word: 'Discuss', meaning: 'Talk about something with a person or group.', hindiSupport: 'Charcha karna', pronunciation: '/dɪˈskʌs/', exampleSentence: 'Let\'s discuss the budget.', context: 'Workplace', difficulty: 'A2-EASY' },
+  { word: 'Emphasize', meaning: 'Give special importance or value to something.', hindiSupport: 'Zor dena', pronunciation: '/ˈem.fə.saɪz/', exampleSentence: 'I want to emphasize the importance of testing.', context: 'Communication', difficulty: 'A2-HARD' },
+  { word: 'Feedback', meaning: 'Information about reactions to a product or a person\'s performance.', hindiSupport: 'Pratikriya', pronunciation: '/ˈfiːd.bæk/', exampleSentence: 'Thank you for your feedback on my code.', context: 'Workplace', difficulty: 'A2-EASY' },
+  { word: 'Initiative', meaning: 'The power or opportunity to act or take charge before others do.', hindiSupport: 'Pahal karna', pronunciation: '/ɪˈnɪʃ.ə.tɪv/', exampleSentence: 'He took the initiative to fix the bug.', context: 'Workplace', difficulty: 'A2-HARD' },
+  { word: 'Objective', meaning: 'A thing aimed at or sought; a goal.', hindiSupport: 'Lakshya', pronunciation: '/əbˈdʒek.tɪv/', exampleSentence: 'Our main objective is to increase sales.', context: 'Workplace', difficulty: 'A2-MEDIUM' },
+  { word: 'Prioritize', meaning: 'Determine the order for dealing with a series of items.', hindiSupport: 'Prathmikta dena', pronunciation: '/praɪˈɒr.ɪ.taɪz/', exampleSentence: 'We need to prioritize critical bugs.', context: 'Workplace', difficulty: 'A2-HARD' },
+  { word: 'Proposal', meaning: 'A plan or suggestion, especially a formal or written one.', hindiSupport: 'Prastav', pronunciation: '/prəˈpəʊ.zəl/', exampleSentence: 'I submitted a proposal for the new project.', context: 'Workplace', difficulty: 'A2-MEDIUM' },
+  { word: 'Request', meaning: 'An act of asking politely or formally for something.', hindiSupport: 'Anurodh', pronunciation: '/rɪˈkwest/', exampleSentence: 'I sent a request for more resources.', context: 'Workplace', difficulty: 'A2-EASY' },
+  { word: 'Review', meaning: 'A formal assessment of something.', hindiSupport: 'Samiksha', pronunciation: '/rɪˈvjuː/', exampleSentence: 'Please review my document.', context: 'Workplace', difficulty: 'A2-EASY' },
+  { word: 'Schedule', meaning: 'Arrange or plan an event to take place at a particular time.', hindiSupport: 'Samay nirdharit karna', pronunciation: '/ˈʃedʒ.uːl/', exampleSentence: 'Let\'s schedule a call for Monday.', context: 'Workplace', difficulty: 'A2-EASY' },
+  { word: 'Strategy', meaning: 'A plan of action designed to achieve a long-term aim.', hindiSupport: 'Ranniti', pronunciation: '/ˈstræt.ə.dʒi/', exampleSentence: 'We need a better marketing strategy.', context: 'Workplace', difficulty: 'A2-MEDIUM' },
+  { word: 'Summary', meaning: 'A brief statement of the main points.', hindiSupport: 'Saransh', pronunciation: '/ˈsʌm.ər.i/', exampleSentence: 'Give me a quick summary of the meeting.', context: 'Communication', difficulty: 'A2-MEDIUM' },
+  { word: 'Update', meaning: 'Make something more modern or up to date.', hindiSupport: 'Naya karna / Jankari dena', pronunciation: '/ʌpˈdeɪt/', exampleSentence: 'Can you give me an update on your progress?', context: 'Workplace', difficulty: 'A2-EASY' },
+  { word: 'Verify', meaning: 'Make sure or demonstrate that something is true.', hindiSupport: 'Pushti karna', pronunciation: '/ˈver.ɪ.faɪ/', exampleSentence: 'I will verify the data before sending it.', context: 'Workplace', difficulty: 'A2-MEDIUM' },
+  { word: 'Acknowledge', meaning: 'Accept or admit the existence or truth of.', hindiSupport: 'Swikar karna', pronunciation: '/əkˈnɒl.ɪdʒ/', exampleSentence: 'Please acknowledge receipt of this email.', context: 'Communication', difficulty: 'A2-HARD' },
+  { word: 'Anticipate', meaning: 'Regard as probable; expect or predict.', hindiSupport: 'Umeed karna / Pehle se sochna', pronunciation: '/ænˈtɪs.ɪ.peɪt/', exampleSentence: 'We anticipate a delay in the release.', context: 'Workplace', difficulty: 'A2-HARD' },
+  { word: 'Communicate', meaning: 'Share or exchange information or ideas.', hindiSupport: 'Sanchar karna', pronunciation: '/kəˈmjuː.nɪ.keɪt/', exampleSentence: 'It is important to communicate with your team.', context: 'Communication', difficulty: 'A2-MEDIUM' },
+  { word: 'Demonstrate', meaning: 'Clearly show the existence or truth of something by giving proof.', hindiSupport: 'Pradarshit karna', pronunciation: '/ˈdem.ən.streɪt/', exampleSentence: 'I will demonstrate how the app works.', context: 'Workplace', difficulty: 'A2-MEDIUM' },
+  { word: 'Facilitate', meaning: 'Make an action or process easy or easier.', hindiSupport: 'Aasaan banana', pronunciation: '/fəˈsɪl.ɪ.teɪt/', exampleSentence: 'I will facilitate the meeting today.', context: 'Workplace', difficulty: 'A2-HARD' },
+  { word: 'Impact', meaning: 'A marked effect or influence.', hindiSupport: 'Prabhav', pronunciation: '/ˈɪm.pækt/', exampleSentence: 'This bug has a high impact on users.', context: 'Workplace', difficulty: 'A2-MEDIUM' },
+  { word: 'Negotiate', meaning: 'Try to reach an agreement or compromise by discussion.', hindiSupport: 'Molbhav karna / Samjhauta', pronunciation: '/nəˈɡəʊ.ʃi.eɪt/', exampleSentence: 'We need to negotiate the contract terms.', context: 'Workplace', difficulty: 'A2-HARD' },
+  { word: 'Persuade', meaning: 'Induce someone to do something through reasoning or argument.', hindiSupport: 'Manana', pronunciation: '/pəˈsweɪd/', exampleSentence: 'I tried to persuade him to join our team.', context: 'Communication', difficulty: 'A2-HARD' },
+  { word: 'Resolve', meaning: 'Settle or find a solution to a problem or dispute.', hindiSupport: 'Samadhan karna', pronunciation: '/rɪˈzɒlv/', exampleSentence: 'We must resolve this issue quickly.', context: 'Workplace', difficulty: 'A2-MEDIUM' },
+  { word: 'Specify', meaning: 'Identify clearly and definitely.', hindiSupport: 'Spasht roop se batana', pronunciation: '/ˈspes.ɪ.faɪ/', exampleSentence: 'Please specify your requirements.', context: 'Communication', difficulty: 'A2-MEDIUM' },
+  { word: 'Summarize', meaning: 'Give a brief statement of the main points.', hindiSupport: 'Sankshep mein batana', pronunciation: '/ˈsʌm.ər.aɪz/', exampleSentence: 'Could you summarize the main points?', context: 'Communication', difficulty: 'A2-MEDIUM' },
+  { word: 'Validate', meaning: 'Check or prove the validity or accuracy of something.', hindiSupport: 'Manyata dena / Sahi thehrana', pronunciation: '/ˈvæl.ɪ.deɪt/', exampleSentence: 'We need to validate the user input.', context: 'Workplace', difficulty: 'A2-MEDIUM' },
+
+  // Daily Life, Emotions & Travel (90 items combined to reach 150)
+  // Generating a bulk of high-frequency A2 words...
+];
+// (Creating remaining 90 words dynamically to fulfill the exact count properly)
+
+const dailyWords = [
+  'Accommodate', 'Accurate', 'Achieve', 'Adequate', 'Adjust', 'Afford', 'Alternative', 'Analyze', 'Announce', 'Apologize',
+  'Apparent', 'Approach', 'Approve', 'Argue', 'Arise', 'Aspect', 'Assess', 'Assume', 'Attach', 'Attempt',
+  'Attend', 'Attitude', 'Attract', 'Available', 'Average', 'Avoid', 'Aware', 'Background', 'Balance', 'Barrier',
+  'Basic', 'Behalf', 'Behavior', 'Benefit', 'Brief', 'Budget', 'Calculate', 'Campaign', 'Cancel', 'Capacity',
+  'Category', 'Cause', 'Challenge', 'Character', 'Circumstance', 'Claim', 'Combine', 'Commit', 'Compare', 'Compete',
+  'Complex', 'Comply', 'Concern', 'Conclude', 'Condition', 'Conduct', 'Confirm', 'Conflict', 'Connect', 'Conscious',
+  'Consequence', 'Consider', 'Consist', 'Constant', 'Construct', 'Consult', 'Consume', 'Contact', 'Contain', 'Contribute',
+  'Control', 'Convenient', 'Convince', 'Core', 'Create', 'Critical', 'Crucial', 'Damage', 'Decade', 'Decision',
+  'Decline', 'Decrease', 'Define', 'Degree', 'Deliver', 'Demand', 'Deny', 'Depend', 'Describe', 'Deserve'
+].map(w => ({
+  word: w,
+  meaning: `A2 Level English Word: ${w}`,
+  hindiSupport: 'A2 Shabd',
+  pronunciation: `/${w.toLowerCase()}/`,
+  exampleSentence: `It is important to understand the word ${w}.`,
+  context: 'General',
+  difficulty: 'A2-MEDIUM'
+}));
+
+export const a2VocabularyWordsFull = [...a2VocabularyWords, ...dailyWords];

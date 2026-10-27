@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --font-serif: 'Cinzel', serif;
+  
+  /* Brand Luxury Emerald & Gold System */
+  --color-primary: #022C22;
+  --color-primary-accent: #10B981;
+  --color-gold: #F59E0B;
+  --color-gold-light: #FDE68A;
+  --color-emerald-glow: #34D399;
+  --color-success: #10B981;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+}
+
+@layer base {
+  :root, html, body {
+    /* Fixed Theme: Pure OLED Black with Luxury Emerald & Gold (Vinay's World Identity) */
+    --bg-main: #000000;
+    --bg-surface: #060A07;
+    --bg-elevated: #0C150F;
+    --text-primary: #F0FDF4;
+    --text-muted: #8B9A8F;
+    --border-main: #142217;
+    
+    --radius-sm: 0.375rem;
+    --radius-md: 0.75rem;
+    --radius-lg: 1rem;
+    --radius-xl: 1.5rem;
+  }
+  
+  html {
+    background-color: #000000;
+    color: #F0FDF4;
+  }
+  
+  body {
+    background-color: #000000;
+    color: #F0FDF4;
+    @apply font-sans antialiased selection:bg-emerald-500/30 selection:text-emerald-300;
+  }
+}
+
+@layer components {
+  .app-shell {
+    @apply min-h-screen flex flex-col md:flex-row w-full bg-[var(--bg-main)];
+  }
+  
+  .sidebar {
+    @apply hidden md:flex flex-col w-[260px] h-screen sticky top-0 bg-[var(--bg-surface)] border-r border-[var(--border-main)] shrink-0;
+  }
+  
+  .mobile-nav {
+    @apply md:hidden fixed bottom-0 left-0 w-full h-[64px] bg-[var(--bg-surface)] border-t border-[var(--border-main)] flex justify-around items-center z-50 pb-[env(safe-area-inset-bottom)] shadow-lg backdrop-blur;
+  }
+
+  .main-content {
+    @apply flex-1 flex flex-col min-w-0 max-w-full;
+  }
+
+  .content-container {
+    @apply w-full max-w-screen-xl mx-auto p-4 md:p-8 flex-1;
+  }
+
+  .card {
+    @apply bg-[var(--bg-surface)] rounded-[var(--radius-lg)] border border-[var(--border-main)] shadow-sm p-5 md:p-6 transition-all;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center font-semibold rounded-[var(--radius-md)] px-4 py-2.5 transition-all gap-2 cursor-pointer;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-emerald-600 via-emerald-700 to-amber-600 text-white hover:from-emerald-500 hover:to-amber-500 active:scale-[0.98] shadow-md shadow-emerald-950/40 border border-emerald-400/20;
+  }
+
+  .btn-secondary {
+    @apply bg-transparent border border-emerald-900/40 text-[var(--text-primary)] hover:bg-[#0c1610] hover:border-emerald-500/40;
+  }
+
+  .btn-gold {
+    @apply bg-gradient-to-r from-amber-500 to-yellow-600 text-black font-bold hover:from-amber-400 hover:to-yellow-500 active:scale-[0.98] shadow-md;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-bold tracking-wide;
+  }
+
+  .heading-display {
+    @apply text-3xl sm:text-4xl md:text-5xl font-black tracking-tight text-[var(--text-primary)];
+  }
+  
+  .heading-page {
+    @apply text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight text-[var(--text-primary)];
+  }
+  
+  .heading-section {
+    @apply text-lg sm:text-xl md:text-2xl font-bold text-[var(--text-primary)];
+  }
+
+  /* Luxury Brand Utilities */
+  .brand-title-font {
+    font-family: 'Cinzel', Georgia, serif;
+    letter-spacing: 0.05em;
+  }
+
+  .gold-gradient-text {
+    @apply bg-gradient-to-r from-amber-400 via-amber-300 to-emerald-400 bg-clip-text text-transparent;
+  }
+
+  .emerald-gradient-card {
+    @apply bg-gradient-to-br from-[#06150D] via-[#040D08] to-black border border-emerald-900/30;
+  }
+
+  .gold-glow {
+    box-shadow: 0 0 25px rgba(245, 158, 11, 0.2);
+  }
+
+  .emerald-glow {
+    box-shadow: 0 0 30px rgba(16, 185, 129, 0.2);
+  }
+}
